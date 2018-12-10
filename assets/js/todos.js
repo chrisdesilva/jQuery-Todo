@@ -17,7 +17,7 @@ $("input[type='text']").on("keypress", function(e){
     if(e.which === 13){
         let todoText = $(this).val();
         $(this).val("");
-        $("ul").append("<li><span>X</span> " + todoText + "</li>");
+        $("ul").append("<li><span><i class = 'fas fa-trash'></i></span> " + todoText + "</li>");
     };
 });
 
